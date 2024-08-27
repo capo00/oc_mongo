@@ -73,6 +73,10 @@ class Dao {
     this.createIndexes?.();
   }
 
+  async createIndex(keys, opts) {
+    return await this.coll.createIndex(keys, opts);
+  }
+
   find(filter = {}, { pageSize = DEFAULT_PAGE_SIZE, pageIndex } = {}, sort = {}, projection = {}) {
     return this._exec(() => this._find(filter, { projection }, sort, pageIndex * pageSize, pageSize));
   }
