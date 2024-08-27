@@ -1,5 +1,7 @@
-const Dao = require("./services/dao");
+const Dao = require("./dao/dao");
+const DaoError = require("./dao/dao-error");
 
 module.exports = {
-  Dao
+  Dao,
+  DaoError,
 };

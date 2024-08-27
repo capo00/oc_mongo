@@ -1,14 +1,15 @@
 {
   "name": "oc_mongo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
   },
-  "keywords": [],
+  "keywords": ["nodejs", "mongodb", "dao", "database", "mongo"],
   "author": "",
   "license": "MIT",
-  "description": "",
+  "description": "NodeJS library with simple API for working with mongodb.",
   "dependencies": {
     "mongodb": "^6.8.0",
     "nodemon": "^3.1.4"
